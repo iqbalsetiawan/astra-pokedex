@@ -159,8 +159,8 @@ code {
 
 .info__container__data {
   width: 100%;
-  margin: 0px 40px;
-  flex: 1;
+  /* margin: 0px 40px; */
+  /* flex: 1; */
   gap: 10px;
   display: grid;
 }
