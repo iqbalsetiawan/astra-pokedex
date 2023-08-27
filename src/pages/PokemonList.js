@@ -18,7 +18,7 @@ const PokemonList = () => {
     const fetchPokemonList = async () => {
       try {
         // change the limit as big as you want
-        const limit = 100;
+        const limit = 10000;
         const response = await api.get(`/pokemon?limit=${limit}&offset=0`);
         setPokemonList(response.data.results);
         setLoading(false);
@@ -32,7 +32,7 @@ const PokemonList = () => {
 
   useEffect(() => {
     const fetchPokemonDetailsBatched = async () => {
-      const batchSize = 10;
+      const batchSize = 20;
       const batches = [];
 
       for (let i = 0; i < pokemonList.length; i += batchSize) {
